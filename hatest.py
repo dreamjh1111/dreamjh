@@ -133,3 +133,7 @@ def pinokio():
       print("이벤트 발생")
       break
 #pinokio함수는 이야기 푸는데 필요한 좋은 예시입니다.
+
+while(1):
+    login()
+    
