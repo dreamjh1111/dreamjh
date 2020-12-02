@@ -8,4 +8,3 @@ import time
 def delay(a):
     time.sleep(a)
 #--------for delay----------
-#안된다 스발    
