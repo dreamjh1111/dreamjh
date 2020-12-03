@@ -16,7 +16,49 @@
 '''
 #--------- 11강 예제----------
 #예제 1 : BMI 지수 계산하기
-name = input("이름을 입력하세요 \n")
-age = int(input("나이를 입력하세요. \n"))
-height = float(input("키를 입력하세요.\n"))
+def bmi():
+    name = input("what your name?")
+    age = int(input("what your age?"))
+    height = float(input("typing your height.\n"))
+    weight = float(input("typing your weight.\n"))
 
+    height = height / 100
+    bmi = weight / (height * height)
+    print("%s, your bmi is %f." % (name, bmi))
+
+#예제 2 :BMI 계산 공식을 함수로 구현
+def Getbmi(height, weight):
+    height = height / 100
+    return weight / (height * height)
+#print(" %s BMI percent is %f." %('hong',Getbim(178,77))
+
+#예제 3 : 스무고개 게임
+def game20():
+    number = int(input("1부터 20까지의 수 중 아무 수를 입력하세요. \n"))
+    while(1):
+        guess = int(input("수를 입력하세요.\n"))
+        
+        if guess > number:
+            print("추측한 수보다 적습니다.")
+        if guess < number:
+            print("추측한 수보닥 많습니다.")
+        if guess == number:
+            print("PASS!!!!")
+            break
+
+#예제 4 : 장바구니 추가
+#list(5주차)를 활용해서 장바구니 추가를 구현해 봅시다.
+def shopping():
+    cart = []
+
+    while(1):
+        item = input("add your item.\n")
+        cart.append(item)
+        print(cart)
+
+#예제 5 : 장바구니 삭제
+#list(5주차)를 활용해서 장바구니 추가를 구현해 봅시다.
+def rmshopping():
+    
+while(1):
+    bmi()
