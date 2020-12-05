@@ -58,7 +58,5 @@ def shopping():
 
 #예제 5 : 장바구니 삭제
 #list(5주차)를 활용해서 장바구니 추가를 구현해 봅시다.
-def rmshopping():
-    
 while(1):
     bmi()
